@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achados e Perdidos - Visitantes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    h1, h2, h3 {
+      color: #1a3c6c;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .formulario label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    .formulario input, .formulario textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .formulario button {
+      background-color: #1a3c6c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .formulario button:hover {
+      background-color: #2c5aa0;
+    }
+    .termo {
+      background-color: #f0f0f0;
+      padding: 15px;
+      border-left: 4px solid #1a3c6c;
+      margin-top: 30px;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Achados e Perdidos - Visitantes do SENAI</h1>
+
+    <p><strong>🔍 Perdeu um item durante uma visita ou excursão no SENAI?</strong><br>
+    Nosso sistema de achados e perdidos é voltado para estudantes e colaboradores do SENAI. Se você é visitante e participou de uma excursão ou evento, use o formulário abaixo para registrar a perda do seu item.</p>
+
+    <h2>Formulário de Recuperação de Item</h2>
+    <form class="formulario">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="instituicao">Nome da escola/instituição:</label>
+      <input type="text" id="instituicao" name="instituicao" required>
+
+      <label for="responsavel">Nome do(a) professor(a) ou responsável:</label>
+      <input type="text" id="responsavel" name="responsavel">
+
+      <label for="data">Data da visita:</label>
+      <input type="date" id="data" name="data">
+
+      <label for="descricao">Descrição detalhada do item perdido:</label>
+      <textarea id="descricao" name="descricao" rows="4"></textarea>
+
+      <label for="local">Local provável da perda:</label>
+      <input type="text" id="local" name="local">
+
+      <label for="info">Informações adicionais:</label>
+      <textarea id="info" name="info" rows="3"></textarea>
+
+      <label for="telefone">Telefone de contato:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="autorizado">Autorizado a enviar outra pessoa para retirada?</label>
+      <input type="text" id="autorizado" name="autorizado" placeholder="Sim ou Não">
+
+      <button type="submit">Enviar Solicitação</button>
+    </form>
+
+    <h2>Importante</h2>
+    <p>Entraremos em contato após análise das informações. Podemos confirmar a presença do visitante com a escola ou responsável da excursão.</p>
+
+    <h2>Termo de Retirada (Visitantes)</h2>
+    <div class="termo">
+      Eu, _______________________________________________, portador(a) do documento nº ____________________, declaro que retirei junto ao setor de Achados e Perdidos da unidade SENAI o seguinte item:
+
+      - Item: _____________________________________________  
+      - Descrição: ________________________________________  
+      - Data da perda: ____________________________________  
+      - Data da retirada: _________________________________  
+
+      Estou ciente de que esta entrega foi realizada com base nas informações fornecidas previamente e que o objeto em questão foi identificado como sendo de minha posse.
+
+      Assinatura do visitante: ___________________________  
+      Assinatura do responsável pelo setor: _______________  
+      Data: ____/____/____
+    </div>
+  </div>
+</body>
+</html>
